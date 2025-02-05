@@ -1,0 +1,269 @@
+/*basic grid layout*/
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font: .9em/1.2 Arial, Helvetica, sans-serif;
+}
+.container > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+.container{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+}
+/*flexible grids with the fr units.
+when one of the fr is bigger than the rest then 
+the one with the highest fr unit will take more space
+than the rest. as shown in the example. fr stands for fraction 
+*/
+.container1 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+.container1{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+/*gaps between tracks*/
+.container2 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+/*repeating track listing 
+The first value passed to the repeat() function specifies 
+the number of times you want the listing to repeat, 
+while the second value is a track listing, 
+which may be one or more tracks that you want to repeat.*/
+.container3 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+.container3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+/*implicit grids*/
+.container4 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+.container4{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 20px;
+}
+/*minmax function lets us set a minimum and maximum size for a track
+like in our example 100px is the minimum but the maximum is auto
+which will expand to accommodate more content*/ 
+.container5 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+.container5{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+}
+/*minmax function and repeat function*/
+.container6 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+.container6 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+}
+/*line-based placement*/
+.container7 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+.up2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.up1,
+.up4 {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207, 232, 220);
+    border: 2px solid rgb(79, 185, 227);
+}
+.up3 {
+    border-right: 2px solid #999;
+    grid-column: 1;
+    grid-row: 2;
+}
+.up1{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.up4{
+    grid-column: 1/3;
+    grid-row: 3;
+}
+/*Positioning with grid-template-areas
+rules for grid-template-areas
+you need to have every cell of the grid filled.
+to span across two cells repeat the name 
+to leave a cell empmty use a period (.)
+areas must be rectangular eg you cant have a l-shaped area
+areas cant be repeated in different locations 
+*/
+.up5,
+.up8 {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207, 232, 220);
+    border: 2px solid rgb(79, 185, 227);
+}
+.container8 {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+.up5 {
+    grid-area: header;
+}
+.up6 {
+    grid-area: content;
+}
+.up7 {
+    border-right: 2px solid #999;
+    grid-area: sidebar;
+}
+.up8 {
+    grid-area: footer;
+} 
+/*nesting grids and subgrids*/
+.up9,
+.up12 {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207 232 220);
+    border: 2px solid rgb(79 185 227);
+}
+.up9 {
+    grid-area: header;
+    border-right: 1px solid #999;
+} 
+.up11 {
+    border-right: 1px solid #999;
+    grid-area: sidebar;
+    padding-right: 10px;
+    font-size: 0.8em;
+}
+.up12 {
+    grid-area: footer;
+}
+.container9 {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+.articles {
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    gap: inherit;
+}
+.up10 {
+    padding: 10px;
+    border: 2px solid rgb(79 185 227);
+    border-radius: 5px;
+}
+/*nesting subgrid and grid*/
+.container10 > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+.container10{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+}
+#subgrid{
+    grid-column: 1/4;
+    grid-row: 2/4;
+    display: grid;
+    gap: inherit;
+    grid-template-columns: subgrid;
+    grid-template-rows: 2fr 1fr;
+}
+#subgrid > div{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(79,185,227);
+}
+/*poistioning grid using 12-column grid*/
+.container11{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+}
+.up13{
+    grid-column: 1/13;
+    grid-row: 1;
+}
+.up14{
+    grid-column: 4/13;
+    grid-row: 2;
+}
+.up15{
+    grid-column: 1/4;
+    grid-row: 2;
+    border-right: 2px solid black;
+}
+.up16{
+    grid-column: 1/13;
+    grid-row: 3;
+}
+.up13,
+.up16{
+    padding: 10px;
+    border: 2px solid rgb(79 185 227);
+    border-radius: 5px;
+}
+  
+  
+
+  
+

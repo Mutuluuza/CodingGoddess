@@ -1,0 +1,80 @@
+/*box shadow*/
+p{
+    margin: 0;
+}
+article{
+    font-size: 20px;
+    max-width: 500px;
+    padding: 10px;
+    background-color: turquoise;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(0 0 0/ 0%),
+        rgb(0 0 0/ 25%)
+    );
+}
+.first{
+    box-shadow: 5px 5px 5px rgb(0 0 0/ 70%);
+}
+/*multiple box shadow*/
+.second{
+    box-shadow: 1px 1px 1px black,
+                2px 2px 2px black,
+                3px 3px 3px red,
+                4px 4px 4px red,
+                5px 5px 1px black,
+                6px 6px 6px black;
+
+}
+/*other box shadow features*/
+button{
+    width: 150px;
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 2;
+    border-radius: 10px;
+    border: 4px solid black;
+    background-image: linear-gradient(to bottom right, yellow, grey);
+    box-shadow: 1px 1px 1px black,
+                inset 2px 3px 5px rgb(0 0 0/ 30%),
+                inset -2px -3px 5px rgb( 255 255 255/ 50%);
+}
+button:focus,
+button:hover{
+    background-color: linear-gradient(
+        to bottom, yellow grey
+    );
+}
+button:active{
+    box-shadow: inset 2px 2px 1px black,
+                inset 2px 3px 5px rgb(0 0 0/ 30%),
+                inset -2px -3px 5px rgb(255 255 255/50%);
+} 
+/*filters*/   
+img{
+    height: 400px;
+    width: 400px;
+    display: block;
+    object-fit:cover;
+    border: 4px solid black;
+    border-radius: 20px;
+}
+.blur{
+    filter: blur(10px);
+}
+.grayscale{
+    filter: grayscale(60%);
+}
+.BigBox{
+    margin: 1em 2em;
+    padding: 20px;
+    width: 100px;
+    display: inline-block;
+    border: 5px dashed teal;
+}
+.filter{
+    filter: drop-shadow(5px 5px 1px rgb(0 0 0/ 70%))
+}
+.boxshadow{
+    box-shadow: 5px 5px 1px rgb(0 0 0/ 70%);
+}

@@ -1,0 +1,118 @@
+body {
+    width: 500px;
+    margin: 0 auto;
+} 
+.p1 {
+    background: rgb(255 84 104 / 30%);
+    border: 2px solid rgb(255 84 104);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+span {
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.float1 {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+}
+.box{
+    float: left;
+    margin-right: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(207 232 220);
+    padding: 1em;
+}
+.special{
+    background-color: rgb(148 255 172);
+    padding: 10px;
+    color: purple;
+    clear: left;
+}
+.box1{
+    float: left;
+    margin-right: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(207 232 220);
+    padding: 1em;
+}
+.wrapper{
+    background-color: rgb(148 255 172);
+    padding: 10px;
+    color: purple;
+}
+.cleared{
+    clear: left;
+}
+.box2{
+    float: left;
+    margin-right: 15px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgb(207 232 220);
+    padding: 1em;
+}
+.wrapper1{
+    background-color: rgb(148 255 172);
+    padding: 10px;
+    color: purple;
+    display: flow-root;
+}
+.cleared{
+    clear: left;
+}
+.float2{
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    padding: 1em;
+}
+.float3{
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    padding: 1em;
+}
+.box4{
+    clear: left;
+}
+.float4{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: aqua;
+    padding: 1em;
+}
+.below{
+    clear: left;
+}
+.float5{
+    float: right;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: aqua;
+    padding: 1em;
+}
+.box5{
+    background-color: rgb(148 255 172);
+    padding: 10px;
+    color: purple;
+    display: flow-root;
+}
+  

@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+    background: white;
+    background-image: url(top-image.png), url(bottom-image.png);
+    background-position: top, bottom;
+    background-size: 100%;
+    background-repeat: no-repeat, no-repeat;
+    border-top: 1mm solid red;
+    border-bottom: 1mm solid red;
+}
+article {
+    width: 400mm;
+    height: 190mm;
+    margin: 20px auto;
+    position: relative;
+}
+address {
+    position: absolute;
+    bottom: 8mm;
+    right: 20mm;
+}
+h1 {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.container{
+    position: relative;
+}
+.textblock{
+    position: relative;
+    z-index: 1;
+    border: solid;
+    height: 100px;
+    margin: 50px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 0.9;
+}
+

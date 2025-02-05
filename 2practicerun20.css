@@ -1,0 +1,146 @@
+body {
+   font-family: sans-serif;
+}
+p,
+ul {
+    border: 2px solid rebeccapurple;
+}
+span,
+li {
+    border: 2px solid blue;
+}
+ul {
+    display: inline-flex;
+    list-style: none;
+    padding: 0;
+}  
+.inline {
+    display: inline;
+}
+.box{
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 40px;
+    margin: 40px;
+    width: 300px;
+    height:150px;
+}
+.alternate{
+    box-sizing: border-box;
+}
+.container {
+    border: 5px solid blue;
+    margin: 40px;
+} 
+.box1 {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 10px;
+    height: 100px;
+    /* try changing the margin properties: */
+    margin-top: -40px;
+    margin-right: 30px;
+    margin-bottom: 40px;
+    margin-left: 4em;
+}
+.container2 {
+    border: 5px solid blue;
+    margin: 40px;
+} 
+p {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding: 10px;
+}
+.one {
+    margin-bottom: 50px;
+}  
+.two {
+    margin-top: 30px;
+}
+em{
+    font: green;
+    font-weight: bold;
+}
+.container3 {
+    margin: 40px;
+    padding: 20px;
+    border-top: 5px dotted green;
+    border-right: 1px solid black;
+    border-bottom: 20px double rgb(23 45 145);
+}
+.box2 {
+    padding: 20px;
+    background-color: lightgray;
+    border: 1px solid #333333;
+    border-top-style: dotted;
+    border-right-width: 20px;
+    border-bottom-color: hotpink;
+}
+.box3 {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 4em;
+} 
+.container4 {
+    border: 5px solid blue;
+    margin: 40px;
+    padding: 20px;
+}
+.paragraph {
+    border: 2px solid rebeccapurple;
+    width: 800px;
+    line-height: 2.0em;
+}
+.block2 {
+    margin: 10px;
+    padding: 10px;
+    width: 30px;
+    height: 10px;
+    background-color: lightblue;
+    border: 2px solid blue;
+}
+.paragraph1 {
+    border: 2px solid rebeccapurple;
+    width: 300px;
+}
+.block3 {
+    margin: 20px;
+    padding: 20px;
+    width: 80px;
+    height: 50px;
+    background-color: lightblue;
+    border: 2px solid blue;
+    display: inline-block;
+}
+Mainlist + ul {
+    font-family: sans-serif;
+    display: flex;
+    list-style: none;
+    border: 1px solid #000;
+}  
+Mainlist + li {
+    margin: 5px;
+} 
+.links-list a {
+    background-color: rgb(179 57 81);
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+}
+.links-list a:hover {
+    background-color: rgb(66 28 40);
+    color: #fff;
+}
+  
+  
+  
+  
+  
+  
+
+  
+  

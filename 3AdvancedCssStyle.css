@@ -1,0 +1,46 @@
+/*blend mode*/
+article {
+    width: 280px;
+    height: 250px;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+div {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+} 
+article div:first-child {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color:turquoise;
+}
+article div:last-child {
+    background-color: purple;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    z-index: -1;
+}
+.multiply-mix {
+    mix-blend-mode: multiply;
+}
+.pic{
+    width: 100%;
+    height: auto;
+    display:block;
+}
+/*css shape*/
+.pic2 {
+    float: left;
+    shape-outside: circle(50%);
+}
+
+ 
+
+
+  

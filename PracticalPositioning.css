@@ -1,0 +1,69 @@
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 10px;
+    font-size: 20px;
+}
+.info-box{
+    width: 600px;
+    height: 100%;
+    margin: 1.25rem auto 0;
+    border: 2px solid lightseagreen;
+    border-radius: 5px;
+}
+/*this is meant to make the different panels display
+on the same page without having to load a different
+webpage*/
+.info-box[role="tablist"]{
+    min-width: 100%;
+    display: flex;
+}
+/*we will style the buttons to look like tabs*/
+.info-box[role="tab"]{
+    padding: 0 1rem 0 1rem;
+    line-height: 3rem;
+    background-color: whitesmoke;
+    color: lightsalmon;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+/*we will style the hover and focus of the buttons*/
+.info-box[role="tab"]:focus span,
+.info-box[role="tab"]:hover span{
+    outline: 2px solid lightblue;
+    outline-offset: 6px;
+    border-radius: 4px;
+}
+/*Then we'll set a rule that highlights one of 
+the tabs when aria-selected property is set to 
+true on it. We will set this using JavaScript 
+when a tab is clicked on*/
+.info-box[role="tab"][aria-selected="true"]{
+    background-color: lightsalmon;
+    color: white;
+}
+/*here we are styling the panels*/
+.info-box .panels{
+    height: 350px;
+    clear: both;
+    position: relative;
+}
+/*this code will style the article*/
+.info-box[role="tabpanel"]{
+    background-color: lightsalmon;
+    color: white;
+    position: absolute;
+    padding: 0.8rem 1.2rem;
+    height: 350px;
+    top: 0;
+    left: 0;
+}
+.info-box[role="tabpanel"].is-hidden{
+    display:none;
+}

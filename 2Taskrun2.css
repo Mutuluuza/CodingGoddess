@@ -1,0 +1,38 @@
+.hex{
+    background-color: #02798b;
+}
+.rgb{
+    background-color: rgb(197 93 161);
+}
+.hsl{
+    background-color: hsl(174 77% 31%) ;
+}
+.alpha{
+      background-color: rgb(197 93 161 /0.6);
+}
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-size:16px
+}
+
+h1 + p {
+    font-size: 120%;
+}
+.box {
+    height: 100px;
+    width: 400px;
+    background-image: url(https://mdn.github.io/shared-assets/images/examples/purple-star.png);
+    background-repeat: no-repeat;
+    background-position: center 20%;
+    margin: 20px auto;
+    border-radius: 0.5em;
+    border: 5px solid rebeccapurple
+}
+  

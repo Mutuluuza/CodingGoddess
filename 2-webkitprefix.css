@@ -1,0 +1,105 @@
+h2 {
+    color: white;
+    display: inline-block;
+    background: url(colourfulheart.jpg) no-repeat center;
+}
+.text-clip {
+    text-decoration: none;
+    border: none;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*how to form layers while using the important tag*/
+@layer page{
+    h3{
+        text-decoration: overline;
+        color:teal;
+    }
+}
+@layer site{
+    h3{
+        text-decoration: underline;
+        color: turquoise;
+    }
+}
+@layer A, B;
+h4{
+    font-family:sans-serif;
+    margin: 1em;
+    padding: 0.2em;
+    color: orange;
+    background-color: teal;
+    text-decoration: overline pink !important;
+    box-shadow: 5px 5px lightgreen !important;
+}
+@layer A{
+    h4{
+        color: grey;
+        background-color: black !important;
+        text-decoration: line-through grey;
+        box-shadow: -5px -5px lightblue !important;
+        font-style: normal;
+        font-weight: normal !important;
+    }
+}
+@layer B {
+    h4{
+        color: aqua;
+        background: yellow !important;
+        text-decoration: underline aqua;
+        box-shadow: -5px 5px magenta !important;
+        font-style: italic;
+        font-weight: bold !important;
+    }
+}
+.first{
+    background-color: wheat;
+    color: pink !important;
+}
+@layer components{
+    .first{
+        background-color: yellow;
+        border: 1rem dashed red;
+        color: orange !important;
+    }
+}
+@layer components.narrow{
+    .first{
+        background-color: skyblue;
+        border: 1rem dashed blue;
+        color: purple !important;
+        border-radius: 50%; 
+    }
+}
+@layer components.wide{
+    .first{
+        background-color: limegreen;
+        border: 1rem dashed green;
+        color: seagreen !important;
+        border-radius: 10%;
+    }
+}
+/*explaination for above background-color: Because unlayered normal styles have precedence over layered normal styles, wheat color wins.
+border: Because within a layer non-nested styles have precedence over normal nested styles, red color wins.
+color: With important styles, layered styles take precedence over unlayered styles, with important styles in earlier declared layers having precedence over later declared layers. In this example, the order of nested layer creation is components.narrow, then components.wide, so important styles in components.narrow have precedence over important styles in components.wide, meaning purple color wins.
+border-radius: The property has been set only in the nested layers so by declaration order 20% radius wins.*/
+@layer yellow, green, purple;
+@layer purple{
+    div div li a{
+        color: rebeccapurple;
+    }
+}
+@layer green{
+    a{
+        color:lightgreen;
+    }
+}
+@layer yellow{
+    #outer div ul .nav a {
+        padding: 5px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+}

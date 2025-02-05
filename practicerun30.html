@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Test css</title>
+        <style>
+          .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+  gap: 20px;
+}
+
+.wrapper > div {
+  background-color: rebeccapurple;
+  border-radius: 0.5em;
+}
+  
+        </style>
+    </head>
+    <div class="wrapper">
+        <img
+          alt="star"
+          src="https://mdn.github.io/shared-assets/images/examples/big-star.png" />
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>      
+</html>

@@ -1,0 +1,23 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.coolbox{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 400px;
+    text-align: center;
+    font-size: 18px;
+    background:
+      linear-gradient(
+          to bottom right,
+          rgb(102 51 153/ 0.2) 39%,
+          rgb(0 0 0/ 0.8) 96%
+        ),
+      rebeccapurple;
+    border: 1px solid black;
+    text-shadow: black;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 10px 10px 10px #800080; 
+}

@@ -1,0 +1,46 @@
+body{
+    margin: 10px;
+}
+html{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    background: #ccc
+}
+.card{
+    width:600px;
+    height: 500px;
+    margin: 100px;
+    background:
+      linear-gradient(
+          105deg,
+          rgb(102 51 153 / 100%) 39%,
+          rgb(0 0 0/ 40%) 96%
+        ),
+      rebeccapurple;
+    border: 0.2em solid black;
+    border-radius: 1.5em;
+    color: white;
+}
+p{
+    text-align: top left;
+}
+.card footer{
+    max-height: 100%;
+    float: right;
+}
+.card header{
+    max-height: 100%;
+    text-align: center;
+}
+.card .para img{
+    border-radius: 1.5em;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 400px;
+}
+h2,
+p{
+    margin:0px;
+}
+

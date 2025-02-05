@@ -1,0 +1,44 @@
+body{
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font:  Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+/*giving the body column and width plus styling*/
+.container{
+    column-count: 3;
+    column-width: 200px;
+    column-rule: 5px dotted lightblue;
+    column-gap: 30px;
+}
+h1{
+    column-span: all; 
+    /*this makes the selector span across many
+    column instead of just being in one column
+    set columnspan to none to see difference*/
+}
+/*fragmented boxes*/
+.container2 > .card{
+    background-color: rgb(207 232 220);
+    border: 2px solid rgb(79 185 227);
+    padding: 10px;
+    margin: 0 0 1em 0;
+}
+.container2{
+    column-width: 250px;
+    column-gap: 20px;
+}
+/*setting break-inside
+opposite of fragmented*/
+.container3{
+    column-width: 200px;
+    column-gap: 20px;
+}
+.card1{
+    break-inside: avoid;
+    background-color: rgb(207 232 220);
+    border: 2px solid rgb(79 185 227);
+    padding: 10px;
+    margin: 0 0 1em 0;
+}

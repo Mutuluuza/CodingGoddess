@@ -1,0 +1,62 @@
+/*code to show what css does if image is bigger than container*/
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+.wrapper > * {
+    margin: 20px;
+}
+.box {
+    border: 5px solid darkblue;
+    width: 200px;   
+} 
+/*showing the difference btw contain and cover values of object-fit*/
+.wrapper1 {
+    display: flex;
+    align-items: flex-start;
+} 
+.wrapper1 > * {
+    margin: 20px;
+}
+.box2 {
+    border: 5px solid darkblue;
+    width: 200px;
+    height: 200px;
+}
+img {
+    height: 100%;
+    width: 100%;
+}
+.cover {
+    object-fit: cover;
+}
+.contain {
+    object-fit: contain;
+}
+input[type="text"],
+input[type="email"]{
+    border: 3px solid rebeccapurple;
+    margin:0 0 1em 0;
+    padding:10px;
+    width:80%;
+}
+input[type="submit"]{
+    border: 3px solid rebeccapurple;
+    background-color: 333;
+    border-radius:5px;
+    padding: 10px 2em;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    left:50%;
+    right:50%;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+    background-color: #333;
+}
+
+  
+  
+
+  

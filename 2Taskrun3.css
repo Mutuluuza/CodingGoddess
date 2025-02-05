@@ -1,0 +1,29 @@
+.box1 {
+    /* Add styles here */
+    border: 5px solid darkblue;
+    min-height: 100px;
+    width: 200px;
+}
+.box2 {
+    /* Add styles here */
+    border: 5px solid darkblue;
+    min-height: 100px;
+    width: 200px;
+}
+.outer{
+    box-sizing: border-box;
+    border: 5px solid darkblue;
+}
+.inner{
+    border: 5px solid black;
+    border-radius: 20px;
+    width: 60%;
+    padding: 10%;
+    background-color: rebeccapurple;
+}
+img{
+    max-width: 100%;
+    border: 5px solid rebeccapurple;
+    border-radius: 20px;
+}
+  

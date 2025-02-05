@@ -1,0 +1,82 @@
+body{
+    font: 1.2em/ 1.5 sans-serif;
+}
+h1{
+    color:blue;
+}
+.heading1{
+    border: 4px solid black;
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: blue;
+    color: white;
+}
+.name{
+    font-size: 200%;
+}
+.special{
+    background-color: yellow;
+}
+.alert{
+    border: 1px grey;
+}
+.alertstop{
+    background-color: red;
+}
+.alertgo{
+    background-color: green;
+}
+tr[class]{
+    font-size: 120%
+}
+tr[class="a"]{
+    background-color: white;
+}
+tr[class~="a"]{
+    background-color: #333;
+}
+tr[class^="a"]{
+    background-color: #333;
+}
+tr[class*="a"]{
+    background-color: #333;
+}
+.container p:first-child{
+    font-size: 150%;
+    color: red;
+}
+a:link,
+a:visited{
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    color: orange;
+}
+tr:nth-child(even){
+    background-color: #333;
+}
+.list{
+    border-bottom: 1px grey;
+}
+a{
+    border: 5px soild grey;
+}
+.Link1{
+    border: 4px solid green;
+}
+.Link2{
+    border: 4px solid pink;
+}
+.Link3{
+    border: 4px solid orange;
+}
+.Link4{
+    border: 4px solid orange;
+}
+li{
+    padding: 0.5em;
+    margin: 0.5em;
+    list-style-type: none;
+}

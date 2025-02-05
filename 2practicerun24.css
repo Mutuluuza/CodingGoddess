@@ -1,0 +1,51 @@
+/*gradient8*/
+.box {
+    height: 150px;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 0.5em;
+}
+.image {
+    background-image: url(https://mdn.github.io/shared-assets/images/examples/big-star.png);
+} 
+.gradient {
+    background-image: linear-gradient(
+      90deg,
+      rgb(119 0 255 / 39%),
+      rgb(0 212 255 / 100%)
+    );
+}
+/*background postioning*/
+.boxA {
+    height: 100px;
+    width: 400px;
+    background-image: url(https://mdn.github.io/shared-assets/images/examples/big-star.png);
+    background-repeat: no-repeat;
+    background-position: right 40px;
+    margin: 20px auto;
+    border-radius: 0.5em;
+    border: 5px solid rebeccapurple;
+}
+/*strings and identifiers*/
+.boxB{
+    width: 400px;
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 5px solid rebeccapurple;
+    background-color: lightblue;
+}
+.boxB::after{
+    content: "This is  string. I know because it is quoted in the css";
+}
+.wrapper {
+    width: 400px;
+}
+.boxC {
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 5px solid rebeccapurple;
+    background-color: lightblue;
+    width: calc(20% + 100px);
+}
+  
+    

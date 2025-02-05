@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CSS Layout</title>
+    <link rel="stylesheet" href="CSSlayout.css"/>
+  </head>
+  <h1>Basic document flow</h1>
+<p class="p1">
+  I am a basic block level element. My adjacent block level elements sit on new
+  lines below me.
+</p>
+<p class="p1">
+  By default we span 100% of the width of our parent element, and we are as tall
+  as our child content. Our total width and height is our content + padding +
+  border width/height.
+</p>
+<p class="p1">
+  We are separated by our margins. Because of margin collapsing, we are
+  separated by the size of one of our margins, not both.
+</p>
+<p class="p1">
+  Inline elements <span>like this one</span> and <span>this one</span> sit on
+  the same line along with adjacent text nodes, if there is space on the same
+  line. Overflowing inline elements will
+  <span>wrap onto a new line if possible (like this one containing text)</span>,
+  or just go on to a new line if not, much like this image will do:
+  <img src="long.jpg" alt="snippet of cloth" />
+</p>
+<div class="float1">
+<h1>Float example</h1>
+<div class="box">Eldoria's United Victory 😊</div>
+<p class="special">
+    Once upon a time, nestled in the heart of a lush valley, 
+    there was a local kingdom named Eldoria. 
+    Eldoria was renowned for its breathtaking landscapes, 
+    with emerald forests, sparkling rivers, 
+    and towering mountains. 
+    The kingdom was ruled by the wise and benevolent King Arion, 
+    who was deeply loved by his people. 
+    His daughter, Princess Elara, was known for her kindness and compassion, 
+    often seen helping the villagers and tending to the gardens.
+</p>
+<p>
+    One fateful day, a mysterious traveler arrived in Eldoria, 
+    bringing news of an impending threat from a neighboring realm. 
+    The kingdom's peace was at risk, and the people looked to King Arion for guidance. 
+    The king, with his unwavering wisdom, decided to form an alliance with nearby kingdoms,
+    uniting their forces to protect their homeland. 
+    As preparations for defense began, 
+    Princess Elara played a crucial role in rallying the spirits of the people and ensuring that everyone felt supported during this challenging time.
+</p>
+<p>
+    Through their combined efforts, 
+    Eldoria and its allies successfully thwarted the impending invasion, 
+    and peace was restored to the valley. 
+    The kingdom emerged stronger and more united than ever before. 
+    The people of Eldoria celebrated their victory with a grand festival,
+    honoring the bravery and unity that had saved their beloved home. 
+    From that day forward, Eldoria's story became a symbol of resilience and the power of coming together in the face of adversity.
+</p>
+</div>
+<div class="wrapper">
+    <div class="box1">Float1</div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus
+      aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci,
+      pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at
+      ultricies tellus laoreet sit amet.
+    </p>
+</div>
+<div class="wrapper1">
+    <div class="box2">Float1</div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla luctus
+      aliquam dolor, eu lacinia lorem placerat vulputate. Duis felis orci,
+      pulvinar id metus ut, rutrum luctus orci. Cras porttitor imperdiet nunc, at
+      ultricies tellus laoreet sit amet.
+    </p>
+</div>
+<div class="box3">
+    <div class="float2">One</div>
+    <div class="float3">Two</div>
+    <p>The two boxes are floating to either sides of the text</p>
+</div>
+<div class="box4"> 
+    <div class="float4">Float</div>
+    <p> This sentence appears next to the float</p>
+    <p class="below"> Make this sentence appear below the float</p>
+</div>
+<div class="box5">
+    <div class="float5">Float</div>
+    <p>This senetence appears next to the float</p>
+</div>
+</html>

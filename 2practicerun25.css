@@ -1,0 +1,65 @@
+img{
+    border: 5px solid darkblue;  
+}
+.box1{
+    border: 5px solid darkblue;
+}
+.wrapper1 {
+    display: flex;
+}
+.wrapper1 > * {
+    margin: 20px;
+} 
+.box2 {
+    border: 5px solid darkblue;
+    height: 100px;
+    width: 200px;
+}
+.box3{
+    border: 5px solid darkblue;
+    width: 50%;
+}
+.box4 {
+    border: 5px solid darkblue;
+    width: 200px;
+    margin: 10%;
+    padding: 10%;
+}
+/*min and max sizing*/
+.wrapper2 {
+    display: flex;
+    align-items: flex-start;
+} 
+.wrapper2 > * {
+    margin: 20px;
+}
+.box5 {
+    border: 5px solid darkblue;
+    min-height: 100px;
+    width: 200px;
+}
+.box6 {
+    width: 200px;
+}
+.mini-box {
+    width: 50px;
+}
+.width {
+    width: 100%;
+}
+.max {
+    max-width: 100%;
+}
+.box7 {
+    border: 5px solid darkblue;
+    width: 20vw;
+    height: 20vh;
+    font-size: 10vh;
+}
+  
+  
+  
+  
+  
+
+    
